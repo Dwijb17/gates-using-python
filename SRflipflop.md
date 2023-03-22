@@ -1,4 +1,4 @@
-# s = 0  # set input
+s = 0  # set input
 r = 0  # reset input
 q = 0  # output
 q_bar = 1  # complement output
