@@ -1,0 +1,34 @@
+#sr flip flop
+# Prompt the user for S and R inputs
+S = int(input("Enter the value of S (0 or 1): "))
+R = int(input("Enter the value of R (0 or 1): "))
+
+# Initialize the flip-flop outputs to 0
+Q = 0
+Q_bar = 1
+
+# Implement the S-R flip-flop using if-else statements
+if S == 1 and R == 0:
+    Q = 1
+    Q_bar = 0
+    print("Q: ", Q)
+    print("Q_bar: ", Q_bar)
+    print("State: Set condition")
+elif S == 0 and R == 1:
+    Q = 0
+    Q_bar = 1
+    print("Q: ", Q)
+    print("Q_bar: ", Q_bar)
+    print("State: Reset condition")
+elif S == 1 and R == 1:
+    Q = 0
+    Q_bar = 0
+    print("Q: ", Q)
+    print("Q_bar: ", Q_bar)
+    print("State: Invalid inputs")
+else:
+    Q= Q
+    Q_bar = Q_bar
+    print("Q: ", Q)
+    print("Q_bar: ", Q_bar)
+    print("State: Hold condition")
